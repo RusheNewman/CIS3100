@@ -1,9 +1,11 @@
 ### **1. Creating Network Namespaces**
 
 -  First, we use the ip netns add command to create two new network namespaces named netns1 and netns2. This creates two isolated network environments that you are then able to attach interfaces, routes, and so on to, that are separate from the host. The command itself binds a handle (basically a reference) to a new network namespace. This creates a namespace file in /var/run/netns/ so that you can reference that namespace later.
+
    ![](https://github.com/RusheNewman/CIS3100/blob/main/Lab%203%20Pictures/Pasted%20image%2020250930115425.png)
 
 - Next, we use a command to verify that we've indeed created these namespaces. This command probably just inspects the /var/run/netns/ directory and displays the names of the namespaces.
+
   ![](https://github.com/RusheNewman/CIS3100/blob/main/Lab%203%20Pictures/Pasted%20image%2020250930120010.png)
 
 ### **2. Creating Virtual Ethernet (veth) Pairs**
